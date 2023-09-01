@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <header>
+        <!-- NavBar Design -->
+        <nav class="netflix-navbar">
+            <div>
+                <!-- Navbar - Main Netflix Logo -->
+                <img class="netflix-logo" src="Netflix Logo.png" alt="Netflix Logo">
+            </div>
+            <div class="navbar-items">
+                <!-- Select Language Dropdown -->
+                <div class="dropdown-container">
+                    <img class="globe-icon" src="Globe Icon.png" alt="Globe Icon">
+                    <div >
+                        <select name="language" id="language" class="dropdown-language">
+                            <option value="english" selected >English</option>
+                            <option value="hindi">Hindi</option>
+                        </select>
+                    </div>
+
+                </div>
+                <!-- SignIn Button -->
+                <div class="sign-in">
+                    <a href="/Netflix-LogIn.html" target="_blank"><p style="font-weight: 600;">Sign In</p></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Body -->
+    <main>
+        <section class="primary-banner">
+            <!-- Background Image -->
+            <div class="bg-image">
+            </div>
+            <!-- Bg Image Overlay -->
+            <div class="Bg-Overlay"></div>
+            <div class="main-content">
+                <!-- All Text Content -->
+                <div class="first-heading">
+                    <h1>Unlimited movies, TV shows and more
+                    </h1><br>
+                </div>
+                <div class="second-heading">
+                    <p>Watch anywhere. Cancel anytime.</p><br>
+                </div>
+                <div class="third-heading">
+                    <p><nobr></nobr>Ready to watch? Enter your email to create or restart your membership.</nobr</p><br>
+                </div>
+                <!-- Email & Get Started Box -->
+                <div class="box">
+                    <form onsubmit="saveEmail(event)">
+                        <!-- Function name used in Js -->
+                        <input type="email" class="email-box" id="emailInput" placeholder="Enter Email & Press Get Started (Compulsary)" required>
+                        <!-- Id used in Js -->
+                    </form>
+                    <a href="/Netflix-step1_1of3.html" target="_blank" ><input type="submit" value="Get Started " required class="get-started"></a>
+                </div>
+            </div>
+        </section>
+        <section class="secondary-banner">
+            <!-- Secondary Banner Card - 1 -->
+            <div class="secondary-banner-1">
+                <div class="description-1">
+                    <p class="text-1">Enjoy on your TV</p>
+                    <p class="text-2">Watch on smart TVs, PlayStation, Xbox, Chromecast,<br> Apple TV, Blu-ray players and more.</p>
+                </div>
+                <div>
+                    <img class="image-1" src="/sec-banner-1 tv img.png" alt="Netflix Tv">
+                    <video class="video-1" autoplay playsinline muted loop source src="/sec-banner-1 tv video.m4v"></video>
+                </div>
+            </div>
+
+            <!-- Secondary Banner Card - 2 -->
+            <div class="secondary-banner-2">
+                <div class="description-2">
+                    <p class="text-3">Download your shows to <br>watch offline</p>
+                    <p class="text-4">Save your favourites easily and always have <br>something to watch.</p>
+                </div>
+                <div class="parent-img">
+                    <div class="main-img">
+                        <img src="/sec-banner-2 img.jpg" alt="Netflix Mobile">
+                    </div>
+                    <div class="overlay-img">
+                        <img src="/sec-banner-2 img2.jpg" alt="Netflix second Banner" width="45.71px" height="64px">
+                        <p class="text-stranger">Stranger Things</p>
+                        <p class="text-downloading">Downloading...</p>
+                        <div class="download-animated"></div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <!-- Secondary Banner Card - 3 -->
+            <div class="secondary-banner-3">
+                <div class="description-3">
+                    <p class="text-5">Watch everywhere</p>
+                    <p class="text-6">Stream unlimited movies and TV shows on your <br> phone, tablet, laptop, and TV.</p>
+                </div>
+                <div class="banner-3-img-video">
+                    <img src="/sec-banner-3 tv img.png" alt="Netflix Tv">
+                    <video autoplay playsinline muted loop < source src="/sec-banner-3 video.m4v"></video>
+                </div>
+            </div>
+
+            <!-- Secondary Banner Card - 4 -->
+            <div class="secondary-banner-4">
+                <div class="description-4">
+                    <p class="text-7">Create profiles for kids</p>
+                    <p class="text-8">Send children on adventures with their favourite <br> characters in a space made just for them—free with <br> your membership.</p>
+                </div>
+                <div class="child-img">
+                    <img src="/sec-banner-4 img.png" alt="Children Img">
+                </div>
+            </div>
+
+            <!-- FQA -->
+            <div class="fqa">
+                <div class="fqa-items">
+                    <h2 class="text-fqa">Frequently Asked Questions</h2>
+                    <div class="accordion">
+                        <div class="contentBx">
+                            <div class="label"> What is Netflix? </div>
+                            <div class="content">
+                                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more – on thousands of internet-connected <br>
+
+                                    You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                            </div>
+                        </div>
+                        <div class="contentBx">
+                            <div class="label"> How much dows Netflix cost? </div>
+                            <div class="content">
+                                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹ 649 to ₹ 149 a month. No extra costs, no contracts.</p>
+                            </div>
+                        </div>
+                        <div class="contentBx">
+                            <div class="label"> Where can I watch?</div>
+                            <div class="content">
+                                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles. <br>
+
+                                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                            </div>
+                        </div>
+                        <div class="contentBx">
+                            <div class="label"> How do I cancel?</div>
+                            <div class="content">
+                                <p>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees – start or stop your account anytime.</p>
+                            </div>
+                        </div>
+                        <div class="contentBx">
+                            <div class="label"> What can I watch on Netflix? </div>
+                            <div class="content">
+                                <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                            </div>
+                        </div>
+                        <div class="contentBx">
+                            <div class="label"> Is Netflix good for kids? </div>
+                            <div class="content">
+                                <p>The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and films in their own space. <br>
+
+                                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don’t want kids to see.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        
+    </main>
+
+    <!-- Second Email & Get Started Box -->
+    <div class="third-heading">
+        <p style="margin-left: 45.5%;"><nobr>Ready to watch? Enter your email to create or restart your membership.</nobr></p><br>
+    </div>
+    <div style="margin: 10px 0px 90px 28.5%;" class="box">
+        <input type="email" name="email" id="email" placeholder="Enter Email & Press Get Started (Compulsary)" class="email-box">
+        <a href="/Netflix-step1_1of3.html" target="_blank"><input type="submit" value="Get Started >" class="get-started"></a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Questions? Call 000-800-919-1694</p>
+        <div class="footer-columns">
+            <ul>
+                <li>FAQ</li>
+                <li>Media Centre</li>
+                <li>Ways to Watch</li>
+                <li>Cookie Preferences</li>
+                <li>Speed Test</li>
+            </ul>
+            <ul>
+                <li>Help Centre</li>
+                <li>Investor Relations</li>
+                <li>Terms of Use</li>
+                <li>Corporate Information</li>
+                <li>Legal Notices</li>
+            </ul>
+            <ul>
+                <li>Account</li>
+                <li>Jobs</li>
+                <li>Privacy</li>
+                <li>Contact Us</li>
+                <li>Only on Netflix</li>
+            </ul>
+        </div>
+
+        <!-- Second Select Language Dropdown Box -->
+        <div style="margin: 40px 0px 0px 38px;" class="navbar-items">
+            
+            <div class="dropdown-container">
+                <img class="globe-icon" src="Globe Icon.png" alt="Globe Icon">
+                <div>
+                    <select name="language" id="language" class="dropdown-language">
+                        <option value="english" selected >English</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                </div>
+
+            </div>
+        
+    </footer>
+    <p style="margin: 10px 0px 50px 14.5%; font-size: 14px;">Netflix India</p>
+    <script src="index.js"></script>
+</body>
+</html>

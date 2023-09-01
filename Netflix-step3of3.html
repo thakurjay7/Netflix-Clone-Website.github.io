@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="Netflix-step3of3.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar  -->
+        <nav class="navbar">
+
+                <img class="netflix-logo" src="/Netflix Logo.png" alt="Netflix Logo">
+
+                <a href="/Netflix-LogIn.html">Sign in</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main">
+            <!-- Main Container -->
+            <div class="main-container">
+                <div class="main-content">
+                    <div>
+                        <img src="/Lock step 3.png" alt="Lock Icon" width="50px" height="50px">
+                    </div>
+                    <div class="step">
+                        STEP <b>3</b> OF <b>3</b>
+                    </div>
+                    <div>
+                        <h1>Choose how to pay</h1>
+                    </div>
+                    <div>
+                        <p class="text-3">Your payment is encrypted and you can change your <br> payment method at anytime.</p>
+                    </div>
+                    <div>
+                        <h3>Secure for peace of mind. <br>
+                            Cancel easily online.
+                            </h3>
+                    </div>
+                    <a href="/Payment done.html"><div class="box-1">
+                        <div>
+                            <p>Credit or Debit Card</p>
+                        </div>
+                        <div class="visa">
+                            <img src="/VISA.png" alt="Visa">
+                            <img src="/MASTERCARD.png" alt="Mastercard">
+                            <img src="/AMEX.png" alt="Amex">
+                            <img src="/DINERS.png" alt="Dinners">
+                        </div>
+                        <div>
+                            <img class="arrow" src="/Right arrow.png" alt="Right arrow">
+                        </div>
+                    </div></a>
+                    <a href="/Payment done.html"><div class="box-2">
+                        <div>
+                            <p>UPI AutoPay</p>
+                        </div>
+                        <div class="upi">
+                            <img src="/BHIM.png" alt="Bhim">
+                            <img src="/PAYTM.png" alt="Paytm">
+                            <img src="/PHONEPE.png" alt="PhonePe">
+                            <img src="/AMAZONPAY.png" alt="AmazonPay">
+                            <img src="/GPAY.png" alt="Gpay">
+                        </div>
+                        <div>
+                            <img class="arrow" src="/Right arrow.png" alt="Right arrow">
+                        </div>
+                    </div></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Questions? Call 000-800-919-1694</p>
+        <div class="footer-columns">
+            <ul>
+                <li>FAQ</li>
+                <li>Privacy</li>
+            </ul>
+            <ul>
+                <li><nobr> Help Centre </nobr></li>
+                <li><nobr> Corporate Preferences</nobr></li>
+            </ul>
+            <ul>
+                <li><nobr>Netflix Shop</nobr></li>
+                <li><nobr>Corporate Information</nobr></li>
+        
+            </ul>
+            <ul>
+                <li><nobr>Terms of Use</nobr></li>
+            </ul>
+        </div>
+        <!-- Select Language Dropdown Box -->
+        <div style="margin: 40px 0px 0px 45px;" class="navbar-items">
+                    
+            <div class="dropdown-container">
+                <img class="globe-icon" src="/Globe Icon black.png" alt="Globe Icon">
+                <div>
+                    <select name="language" id="language" class="dropdown-language">
+                        <option value="english" selected >English</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+  // Get all the card elements
+  const cards = document.querySelectorAll('.box-1, .box-2');
+
+  // Add a click event listener to each card
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      // Remove the 'selected' class from all cards
+      cards.forEach(card => card.classList.remove('selected'));
+
+      // Add the 'selected' class to the clicked card
+      card.classList.add('selected');
+    });
+  });
+</script>
+</body>
+</html>

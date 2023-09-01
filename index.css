@@ -1,0 +1,477 @@
+/* Normalize Css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+/* Navbar container Style */
+.netflix-navbar{
+    background: transparent;
+    width: 100%;
+    height: 86px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 25px 190px 25px 190px;
+    z-index: 10;
+}
+/* Nav-Main Netflix Logo */
+.netflix-logo{
+    width: 148px;
+    height: 40px;
+}
+/* Other Navbar Items  */
+.navbar-items{
+    display: flex;
+    gap: 10px;
+    
+}
+/* Dropdown Container or 2nd Element of Navbar */
+.dropdown-container{
+    width: 126.4px;
+    height: 32px;
+    display: flex;
+    gap: 6px;
+    border: 1px rgba(255, 255, 255, 0.415) solid;
+    background: transparent;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+/* Globe Icon Style */
+.globe-icon{
+    width: 20px;
+    height: 20px;
+    margin: px;
+    
+}
+/* Dropdown Language Option */
+.dropdown-language{
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+
+}
+/* Sign-In Button */
+.sign-in{
+
+    width: 76.9px;
+    height: 32px;
+    background-color: #e50914;
+    border-radius: 5px;
+    padding: 7px 10px 7px 11px;
+    cursor: pointer;
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+/* Netflix Bg Image */
+.bg-image{
+    width: 1380px;
+    height: 700px;
+    object-fit: cover;
+    background: url('/Bg-Image.jpg') no-repeat center;
+    
+}
+.bg-image::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    z-index: 1;/* note ?? */
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: inset 12px 100px 25px #0000006a, inset -12px -100px 25px #000000a6;
+}
+
+/* Hero Content Style */
+
+.main-content{
+    z-index: 10;
+    gap: 10px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px ;
+
+
+}
+/* First Heading */
+.first-heading{
+    width: 880px;
+    height: 61.6px;
+    font-size: 32px;
+    color: #ffffff;
+    
+}
+.second-heading{
+    width: 870.63px;
+    height: 30.4px;
+    margin: 1px 0px 0px 0px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.third-heading{
+    width: 870.63px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 20px;
+}
+/* Email & Get Started Box Style */
+.box{
+    width: 871px;
+    height: 57px;
+    display: flex;
+    margin-left: 13%;
+}
+.email-box{
+    width: 430px;
+    height: 56px;
+    padding: 10px 16px 8px;
+    border-radius: 5px;
+    background-color: rgba(20, 19, 19, 0.685);
+    border: 1px rgba(255, 255, 255, 0.415) solid;
+
+}
+
+::placeholder{
+    text-align: center;
+    font-weight: 700;
+    z-index: 10;
+    color: #ffffff99;
+}
+.get-started{
+    border: none;
+    width: 201.25px;
+    height: 56px;
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 24px;
+    margin: 0px 0px 0px 8px;
+    border-radius: 5px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+/* Different Banner Style */
+
+.secondary-banner-1, .secondary-banner-2, .secondary-banner-3, .secondary-banner-4{
+    border-top: 8px rgb(53, 52, 52) solid;
+    width: 1380px;
+    height: 650px;
+    padding: 0px;
+}
+
+/* First banner */
+.secondary-banner-1{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+.description-1{
+    padding-left: 80px;
+}
+
+.secondary-banner-1 video{
+    margin-left: 84px;
+    position: absolute;
+    width: 93%;
+    height: 54%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    top: 21.5%;
+}
+
+.text-1{
+    width: 579px;
+    height: 61.6px;
+    font-size: 48px;
+    font-weight: 800;
+    padding-bottom: 90px;
+}
+.text-2{
+    font-size: 25px;
+    font-weight: 0;
+
+}
+
+/* Second banner */
+.secondary-banner-2{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    align-items: left;
+    justify-content: center;
+    padding: 25px 0px 0px 0px;
+}
+/* Overall text in banner-2 */
+.description-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+/* Image box */
+.parent-img{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+    
+}
+/* Small stranger things img */
+.overlay-img{
+    position: absolute;
+    top: 75%;
+    left: 110px;
+    width: 65%;
+    height: 90px;
+    padding-left: 2px;
+    border: 2px rgba(255, 255, 255, 0.415) solid;
+    border-radius: 10px;
+    background-color:black;
+    padding: 10px 0px 10px 10px;
+    text-align: left;
+}
+/* Text - Stranger thing & Downloading */
+.text-stranger{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 1px;
+    width: 274.29px;
+    height: 20px;
+    font-size: 16px;
+
+}
+.text-downloading{
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 255px;
+    height: 18.4px;
+    font-size: 14px;
+    color: #0071eb;
+
+}
+.download-animated{
+
+    background: url('/netflix-download-icon.gif');
+    width: 3rem;
+    height: 3rem;
+    background-size: 100%;
+    top: 22%;
+    left: 85%;
+    position: absolute;    
+}
+
+.text-3{
+    width: 100%;
+    height: 61.6px;
+    font-size: 48px;
+    font-weight: 800;
+    padding-bottom: 150px;
+    text-align: left;
+}
+.text-4{
+    font-size: 25px;
+    font-weight: 0;
+    text-align: left;
+
+}
+
+/* Third banner */
+.secondary-banner-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+
+}
+.secondary-banner-3 video{
+    margin-left: 100px;
+    position: absolute;
+    width: 76%;
+    height: 60%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    top: 35px;
+    left: 20px;
+}
+.description-3{
+    padding-left: 80px;
+}
+.text-5{
+    width: 579px;
+    height: 61.6px;
+    font-size: 48px;
+    font-weight: 800;
+    padding-bottom: 90px;
+}
+.text-6{
+    font-size: 25px;
+    font-weight: 0;
+
+}
+.banner-3-img-video{
+    margin-top: 30px;
+}
+
+/* Fourth banner */
+.secondary-banner-4{
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    padding: 60px 0px 0px 80px;
+}
+.description-4{
+    text-align: left;
+    padding: 150px 0px 0px 0px;
+
+}
+/* Children Img */
+.child-img{
+    padding-left: 0px;
+}
+.text-7{
+
+    width: 100%;
+    height: 61.6px;
+    font-size: 44px;
+    font-weight: 800;
+    padding-bottom: 80px;
+}
+.text-8{
+    font-size: 25px;
+    font-weight: 0;
+
+}
+
+/* FQA */
+.fqa{
+    border-top: 8px rgb(53, 52, 52) solid;
+    width: 1380px;
+    height: 582.25;
+    padding: 72px 0px;
+    text-align: center;
+
+}
+.fqa-items{
+    padding: 0px 0px 20px 8%;
+
+
+
+}
+.text-fqa{
+    width: 1170px;
+    height: 61.6px;
+    font-size: 48px;
+    margin-bottom: 20px;
+    
+    font-weight: 900;
+
+}
+.label{
+    
+    position: relative;
+    margin-top: 10px;
+    padding: 30px 0px 0px 22px;
+    background: rgba(48, 48, 48, 0.921);
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 25px;
+    width: 1170px;
+    height: 84px;
+    text-align: left;
+
+}
+/* Plus Icon */
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top: 0%;
+    right: 20px;
+    transform: translate(-50%);
+    font-size: 3em;
+    font-weight: 0;
+}
+/* Cross Icon */
+.accordion .contentBx.active .label::before{
+    content: '+';
+    transform: rotate(-45deg);
+    top: 0%;
+    display: block;
+
+}
+/* After Click Box */
+.accordion .contentBx .content{
+    position: relative;
+    font-size: 24px;
+    text-align: justify;
+    background: rgba(48, 48, 48, 0.921);
+    width: 1170px;
+    height: 0;
+    overflow: hidden;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.accordion .contentBx.active .content{
+    height: 150px;
+    padding: 10px;
+}
+
+/* Footer */
+.footer, .footer a{
+    
+    border-top: 8px rgb(53, 52, 52) solid;
+    color: #ffffffb3;
+    font-size: 14px;
+    padding: 70px 200px 20px 160px;
+    text-decoration: underline
+}
+.footer p{
+    text-decoration: none;
+    margin: 0px 0px 50px 40px;
+}
+.footer .footer-columns{
+    display: grid;
+    grid-template-columns: 20% 25% 25%;
+    grid-gap: 15rem;
+    padding-left: 40px;
+
+}
+ul{
+    list-style-type: none;
+}
+.footer li{
+    line-height: 2.5;
+}

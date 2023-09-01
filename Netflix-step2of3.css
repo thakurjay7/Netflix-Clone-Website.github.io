@@ -1,0 +1,455 @@
+/* Normalise Css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    color: #333333;
+    font-family: "poppins", sans-serif;
+
+}
+.navbar{
+    width: 1519x;
+    height: 91px;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px rgba(126, 126, 126, 0.255) solid;
+}
+.netflix-logo{
+    width: 190px;
+    height: 60px;
+    margin: 18px 72% 0px 0px;
+}
+.navbar a{
+    width: 100px;
+    height: 90px;
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-top: 30px ;
+}
+
+/* Main Body Style */
+.main{
+    width: 1519px;
+    height: 900px;
+    padding: 0px 0px 95px;
+}
+.main-container{
+    width: 1280px;
+    height: 844px;
+    margin: 30px 4%;
+    padding: 0px 32px 60px;
+}
+
+.step{
+    font-size: 13px;
+    margin: 40px 0px 10px 0px;
+}
+.get-started{
+    border: none;
+    width: 440px;
+    height: 72px;
+    background-color: #e50914;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 24px;
+    margin: 45px 0px 0px 32%;
+    border-radius: 5px;
+    font-weight: 550;
+    cursor: pointer;
+    
+}
+/* Card Style */
+
+.card{
+    display: flex;
+    flex-direction: row;
+}
+.card-1{
+    width: 292px;
+    height: 520px;
+    border: 1px rgb(161, 161, 161) solid;
+    margin: 20px 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.banner-1{
+    width: 270px;
+    height: 120px;
+    margin: 10px;
+    padding: 20px;
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(229, 9, 20) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+    border-radius: 20px;
+}
+.banner-2{
+    width: 270px;
+    height: 120px;
+    margin: 10px;
+    padding: 20px;
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(176, 56, 220) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+    border-radius: 20px;
+}
+.banner-3{
+    width: 270px;
+    height: 120px;
+    margin: 10px;
+    padding: 20px;
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+    border-radius: 20px;
+}
+.banner-4{
+    width: 270px;
+    height: 120px;
+    margin: 10px;
+    padding: 20px;
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(33, 114, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+    border-radius: 20px;
+}
+
+.heading-1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.875rem; 
+    color: #ffffff;
+}
+.heading-2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+/* Card Details */
+
+
+.box-1{
+    display: flex;
+    margin: 50px 0px 10px 30px;
+    
+}
+.box-2, .box-3, .box-4{
+    display: flex;
+    margin: 20px 0px 10px 30px;
+    
+}
+/* Card 1 Cicrle  */
+.circle-1{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(229, 9, 20);
+    border-radius: 50%;
+}
+/* Card 1 tick mark */
+.tick-1{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 9.8%;
+    top: 63%;
+    
+}
+.tick-2{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 9.8%;
+    top: 75.2%;
+    
+}
+.tick-3{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 9.8%;
+    top: 87.3%;
+}
+.tick-4{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 9.8%;
+    top: 99.4%;
+    
+}
+
+/* Card 2 Cicrle  */
+.circle-2{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(176, 56, 220);;
+    border-radius: 50%;
+}
+/* Card 2 tick mark */
+.tick-2-1{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 31.7%;
+    top: 63%;
+    
+}
+.tick-2-2{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 31.7%;
+    top: 75.2%;
+    
+}
+.tick-2-3{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 31.7%;
+    top: 87.3%;
+    
+}
+.tick-2-4{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 31.7%;
+    top: 99.4%;
+    
+}
+
+/* Card 3 Cicrle  */
+.circle-3{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(109, 59, 227);
+    border-radius: 50%;
+}
+/* Card 3 tick mark */
+.tick-3-1{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 53.6%;
+    top: 63%;
+    
+}
+.tick-3-2{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 53.6%;
+    top: 75.2%;
+    
+}
+.tick-3-3{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 53.6%;
+    top: 87.3%;
+    
+}
+.tick-3-4{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 53.5%;
+    top: 99.4%;
+    
+}
+
+/* Card 4 Cicrle  */
+.circle-4{
+    width: 25px;
+    height: 25px;
+    background-color: rgb(33, 114, 227);
+    border-radius: 50%;
+}
+/* Card 4 tick mark */
+.tick-4-1{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 75.4%;
+    top: 63%;
+    
+}
+.tick-4-2{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 75.4%;
+    top: 75.2%;
+    
+}
+.tick-4-3{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 75.4%;
+    top: 87.3%;
+    
+}
+.tick-4-4{
+    position: absolute;
+    content: 'L';
+    transform: scaleX(-1) rotate(-50deg);
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: arial;
+    left: 75.4%;
+    top: 99.4%;
+    
+}
+/* Card Description  */
+.des-1{
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    color: rgb(118, 118, 118);
+    white-space: normal;
+
+}
+.des-2{
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+
+}
+.detail{
+    padding: 0px 0px 0px 10px;
+}
+
+.last-text{
+    color: #737373;
+    font-size: 13px; 
+    font-weight: 600;  
+    margin-top: 20px; 
+}
+/* Footer Style */
+.footer{
+    width: 100%;
+    height: 297px;
+    background-color: #f3f3f3;
+    border-top: 1px rgba(126, 126, 126, 0.255) solid;
+    color: #737373;
+    font-size: 13px;
+    padding: 50px 200px 20px 160px;
+    text-decoration: none;
+}
+.footer p{
+    text-decoration: none;
+    margin: 0px 0px 20px 40px;
+    font-size: 16px;
+}
+.footer .footer-columns{
+    display: grid;
+    grid-template-columns: 1% 1% 1% 1%;
+    grid-gap: 15rem; 
+    padding-left: 40px;
+    cursor: pointer;
+
+}
+ul{
+    list-style-type: none;
+}
+.footer li{
+    line-height: 2.5;
+}
+li:hover{
+    text-decoration: underline;
+}
+
+/* Language Select Dropdown Container */
+.dropdown-container{
+    width: 126.4px;
+    height: 32px;
+    display: flex;
+    gap: 6px;
+    border: 1px rgb(2, 2, 2) solid;
+    background: transparent;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+/* Globe Icon Style */
+.globe-icon{
+    width: 20px;
+    height: 20px;
+    
+}
+/* Dropdown Language Option */
+.dropdown-language{
+    border: none;
+    background: transparent;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    
+
+}
+
+.selectable-card.selected {
+    border: 5px solid #e50914; /* Change color to your preferred color */
+}

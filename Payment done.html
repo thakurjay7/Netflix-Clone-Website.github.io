@@ -1,0 +1,34 @@
+html - <!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Loader with Checkmark</title>
+      <link rel="stylesheet" href="Payment done.css">
+
+   </head>
+   <body>
+      <input type="checkbox" id="check">
+      <label for="check">
+         <div class="check-icon"></div>
+      </label>
+      <span class="heading">
+         <h1>Payment Successful</h1>
+         <p>You are redirecting...</p>
+      </span>
+
+      <script>
+        window.addEventListener('load', () => {
+          setTimeout(() => {
+            const checkbox = document.getElementById('check');
+            checkbox.checked = true;
+            document.querySelector('.heading').style.display = 'block';
+            setTimeout(() => {
+              window.location.href = 'Netflix-home.html'; // Redirect to home.html
+            }, 2000); // Delay time to redirect
+          }, 3000); // delay time to payment done
+        });
+
+     </script>
+   </body>
+</html> 
